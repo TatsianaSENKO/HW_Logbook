@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logbook</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Logbook</h1>
+        <form class="add">
+            <div class="add__text">Date:
+                <input type="date" name="date" class="input_date">
+            </div>
+            <div class="add__text">Name:
+                <input type="text" name="name" class="input_name">
+            </div>
+            <div class="add__text">Course:
+                <input type="text" name="course" class="input_course">
+            </div>
+            <div class="add__text">Assessment:
+                <input type="number" name="assessment" class="input_assessment" min="1" max="10">
+            </div>
+            <input type="button" class="add__btn" value="Add">
+
+        </form>
+
+        <table class="table">
+            <col span="5" class="table_col">
+            <tr class="table_tr">
+                <th class="table_th">Date</th>
+                <th class="table_th">Name</th>
+                <th class="table_th">Course</th>
+                <th class="table_th">Assessment</th>
+                <th class="table_th">Delete</th>
+            </tr>
+            <tbody class="table_body">
+
+            </tbody>
+        </table>
+
+        <div class="filter_name">
+            <div class="filter_text">
+                Filter by name:
+                <input type="text" name="name" class="input_name-filter" placeholder="Enter your name">
+            </div>
+            <input type="button" class="filter_btn" value="Show filter">
+        </div>
+
+        <div class="show"></div>
+
+        <button class="top_btn">Show top assessment</button>
+
+        <div class="show_top"></div>
+
+    </div>
+
+</body>
+</html>
